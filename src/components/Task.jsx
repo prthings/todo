@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 const Task = ({ task, onDelete, onEdit, onComplete }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editedTask, setEditedTask] = useState(task.title);
-  const [checked, setChecked] = React.useState(true);
 
   const handleEdit = () => {
     onEdit(task.id, editedTask);
