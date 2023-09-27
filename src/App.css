@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: azure;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 60px;
 }
-
-.App-link {
-  color: #61dafb;
+.cards{
+  margin: 10px;
+  width: 800px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
 }
+.task {
+  display: flex;
+  align-items: center;
+  margin: 34px;
+  padding: 10px;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgb(185 185 185 / 20%) 0px 7px 9px 0px;
+}
+.box{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  padding: 5px;
+  align-items: center;
+}
+.btn1 button{
+  background-color: #c4ffe6;
+  color: black;
+  width: 70px;
+  height: inherit;
+  padding: 5px;
+  border: none;
+  margin: 5px;
+  border-radius: 6px;
+}
+.btn1 button:hover{
+  background-color:#00a4ff;
+}
+.mt-4{
+margin: 10px;
+}
+.mb-3{
+margin: 10px;
+}
+.input-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 300px;
+}
+.input-group input{
+  background-color: #c4ffe6;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.input-group button{
+  background-color: #c4ffe6;
+  color: black;
+  width: 80px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+}
+.input-group button:hover{
+  background-color: #00a4ff;
+}
+.form-check-label{
+  padding: 10px;
+}
+.edit button{
+  padding: 10px;
+  background-color: #c4ffe6;
+  color: black;
+  width: 80px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
+.edit button:hover{
+  background-color: #00a4ff;
+}
+.edit input{
+  padding: 10px;
+  background-color: #c4ffe6;
+  color: black;
+  width: 240px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+}
+.completed{
+  text-transform: capitalize;
 }
